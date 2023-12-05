@@ -1,3 +1,4 @@
+import sys
 import requests
 import pandas as pd
 from io import StringIO
@@ -47,15 +48,18 @@ def procesar_y_guardar_datos(url, nombre_archivo_csv):
         # Limpiar DataFrame
         df_limpiado = limpiar_dataframe(df)
 
-        # Guardar el resultado en "datos.csv"
+        # Guardar el resultado en el archivo CSV especificado
         df_limpiado.to_csv(nombre_archivo_csv, index=False)
         print(f"Datos procesados y guardados en: '{nombre_archivo_csv}'")
 
-# URL de los datos
-url_datos = "https://huggingface.co/datasets/mstz/heart_failure/raw/main/heart_failure_clinical_records_dataset.csv"
+if __name__ == "__main__":
+    # Obtener los argumentos de la línea de comandos
+    if len(sys.argv) != 3:
+        print("Uso: python script.py <URL_datos> <nombre_archivo_csv>")
+        sys.exit(1)
 
-# Nombre del archivo donde se guardarán los datos
-nombre_archivo_csv = "datos.csv"
+    url_datos = sys.argv[1]
+    nombre_archivo_csv = sys.argv[2]
 
-# Llamar a la función para procesar y guardar los datos
-procesar_y_guardar_datos(url_datos, nombre_archivo_csv)
+    # Llamar a la función para procesar y guardar los datos
+    procesar_y_guardar_datos(url_datos, nombre_archivo_csv)
