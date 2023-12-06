@@ -67,3 +67,33 @@ pip install datasets
 4.7 Se le asigna un nombre al archivo csv
 
 4.8 Se llama a la funcion para descargar y guardar
+
+## Notas Parte 5
+
+5.0 Se importa StringIOdesde iopara crear un objeto StringIO para leer el contenido de texto de la respuesta HTTP.
+
+5.1 Se usaron técnicas de procesamiento de datos para llenar valores faltantes, verificar que no existan filas repetidas y que Verifique si existen valores atípicos para eliminarlos
+
+5.2 Se creó una columna con los que categoriza por edades
+
+5.3 Se encapsula todo y se guarda en "datos.csv"
+
+## Parte 6
+
+Funcionalidades Implementadas
+
+1.Descarga Automática de Datos Se implementó una función que utiliza la biblioteca de solicitudes para descargar          automáticamente los datos desde una URL proporcionada como argumento de línea de comandos.
+2.Conversión a DataFrame y Operaciones de Limpieza Los datos descargados se convierten en un DataFrame de Pandas, permitiendo un manejo eficiente y versátil. Se aplicarán técnicas de limpieza de datos, eliminando filas con valores faltantes y duplicados, y se eliminarán valores atípicos específicos.
+3.Categorización por Edades Se creó una nueva columna en el DataFrame que categoriza a los individuos según grupos de edad predefinidos.
+4.Exportación Automática a CSV El DataFrame resultante después del procesamiento se exporta automáticamente a un archivo CSV llamado "datos.csv". Uso del Script Para ejecutar el script procesar_datos.py, sigue estos pasos:
+Abra la terminal en la ubicación del script. Ejecuta el siguiente comando, reemplazando <URL_DATOS> con la URL específica de los datos que deseas procesar: bash Copy code python procesar_datos.py <URL_DATOS>
+
+## Notas Parte 6
+
+6.0 Se importó StringIO desde io para crear un objeto StringIO y leer el contenido de texto de la respuesta HTTP.
+
+6.1 Se utilizaron técnicas de procesamiento de datos para llenar valores faltantes, verificar la no existencia de filas repetidas y eliminar valores atípicos.
+
+6.2 Se creó una columna que categoriza por edades.
+
+6.3 Se encapsuló todo el proceso y se guardaron los resultados en el archivo "datos.csv".
