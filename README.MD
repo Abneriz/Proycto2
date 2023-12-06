@@ -82,10 +82,12 @@ pip install datasets
 
 Funcionalidades Implementadas
 
-1.Descarga Automática de Datos Se implementó una función que utiliza la biblioteca de solicitudes para descargar          automáticamente los datos desde una URL proporcionada como argumento de línea de comandos.
-2.Conversión a DataFrame y Operaciones de Limpieza Los datos descargados se convierten en un DataFrame de Pandas, permitiendo un manejo eficiente y versátil. Se aplicarán técnicas de limpieza de datos, eliminando filas con valores faltantes y duplicados, y se eliminarán valores atípicos específicos.
-3.Categorización por Edades Se creó una nueva columna en el DataFrame que categoriza a los individuos según grupos de edad predefinidos.
-4.Exportación Automática a CSV El DataFrame resultante después del procesamiento se exporta automáticamente a un archivo CSV llamado "datos.csv". Uso del Script Para ejecutar el script procesar_datos.py, sigue estos pasos:
+1. Descarga Automática de Datos Se implementó una función que utiliza la biblioteca de solicitudes para descargar          automáticamente los datos desde una URL proporcionada como argumento de línea de comandos.
+2. Conversión a DataFrame y Operaciones de Limpieza Los datos descargados se convierten en un DataFrame de Pandas, permitiendo un manejo eficiente y versátil. Se aplicarán técnicas de limpieza de datos, eliminando filas con valores faltantes y duplicados, y se eliminarán valores atípicos específicos.
+3. Categorización por Edades Se creó una nueva columna en el DataFrame que categoriza a los individuos según grupos de edad predefinidos.
+4. Exportación Automática a CSV
+El DataFrame resultante después del procesamiento se exporta automáticamente a un archivo CSV llamado "datos.csv". Uso del Script Para ejecutar el script procesar_datos.py, sigue estos pasos:
+
 Abra la terminal en la ubicación del script. Ejecuta el siguiente comando, reemplazando <URL_DATOS> con la URL específica de los datos que deseas procesar: bash Copy code python procesar_datos.py <URL_DATOS>
 
 ## Notas Parte 6
