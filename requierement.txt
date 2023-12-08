@@ -1,0 +1,6 @@
+﻿matplotlib==3.8.2
+numpy==1.25.0
+pandas==2.0.3
+plotly==5.18.0
+sklearn==0.0.post10
+scikit-learn==0.24.2
